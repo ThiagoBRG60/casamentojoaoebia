@@ -1,5 +1,5 @@
-import { validateEmail, validateGift } from "../../utils/validation.js"
-import { formatCurrency } from "../../utils/currency.js"
+import { validateEmail, validateGift } from "./validation.js"
+import { formatCurrency } from "./currency.js"
 
 const giftPrices = document.querySelectorAll(".gift-prices li button")
 const giftPanel = document.querySelector(".gift-panel")
