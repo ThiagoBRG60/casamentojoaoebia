@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Beatriz & João - 22.11.2026</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Cormorant+Garamond:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./css/animations.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+      <!-- TOAST -->
+      <div class="toast-message success">
+         <div class="toast-info">
+            <img src="./icons/circle-check.svg" alt="ícone de sucesso">
+            <img src="./icons/circle-x.svg" alt="ícone de erro">
+            <p>Testando mensagem do toast</p>
+         </div>
+
+         <button><img src="./icons/x.svg" alt="ícone de x"></button>
+         <span class="toast-timer"></span>
+      </div>
+
+      <main>
+         <!-- HERO -->
+         <section class="hero">
+            <h3>NÓS VAMOS CASAR</h3>
+            <h1>Beatriz <span>& João</span></h1>
+            <img src="./icons/doodle.svg" alt="doodle">
+            <span class="date-badge">22 · 11 · 2026</span>
+         </section>
+
+         <hr class="rule">
+
+         <!-- DETAILS -->
+         <section class="details">
+            <ul>
+               <li>
+                  <img src="./icons/calendar.svg" alt="ícone de calendário">
+                  <div>
+                     <h3>Quando</h3>
+                     <p>Domingo, 22 de novembro, às 15h.</p>
+                  </div>
+               </li>
+               <li>
+                  <img src="./icons/map.svg" alt="ícone de mapa">
+                  <div>
+                     <h3>Onde</h3>
+                     <p>Floritá Eventos</p>
+                     <p>R. Londrina, 1501 - Centro</p>
+                     <a href="https://www.google.com/maps/search/?api=1&query=R.+Londrina+1501+Centro" target="_blank" rel="noopener">Ver no mapa →</a>
+                  </div>
+               </li>
+               <li>
+                  <img src="./icons/dress-code.svg" alt="ícone de traje">
+                  <div>
+                     <h3>Traje</h3>
+				         <p>Esporte fino. Capriche, mas sem precisar de vestido longo ou terno completo.</p>
+                  </div>
+               </li>
+            </ul>
+         </section>
+
+         <hr class="rule">
+
+         <!-- GIFT -->
+         <section class="gifts">
+            <h2>Um mimo para os noivos</h2>
+            <p>Se quiser nos presentear, escolha um valor abaixo. Cada um vira algo especial no dia a dia dessa nova fase.</p>
+            <ul class="gift-prices">
+               <li>
+                  <button data-value="50" data-phrase="Uma taça de espumante pro brinde">
+                     <span>R$ 50</span>
+                     <p>Uma taça de espumante pro brinde</p>
+                  </button>
+               </li>
+               <li>
+                  <button data-value="75" data-phrase="A fatia mais generosa do bolo">
+                     <span>R$ 75</span>
+                     <p>A fatia mais generosa do bolo</p>
+                  </button>
+               </li>
+               <li>
+                  <button data-value="100" data-phrase="Gasolina pro carro dos noivos">
+                     <span>R$ 100</span>
+                     <p>Gasolina pro carro dos noivos</p>
+                  </button>
+               </li>
+               <li>
+                  <button data-value="150" data-phrase="A música do primeiro beijo tocando mais alto">
+                     <span>R$ 150</span>
+                     <p>A música do primeiro beijo tocando mais alto</p>
+                  </button>
+               </li>
+               <li>
+                  <button data-value="200" data-phrase="Uma noite chique lá na lua de mel">
+                     <span>R$ 200</span>
+                     <p>Uma noite chique lá na lua de mel</p>
+                  </button>
+               </li>
+            </ul>
+
+            <div class="gift-panel">
+               <div class="gift-panel-inner">
+                  <div class="gift-panel-slider">
+                     <form class="email-step">
+                        <label for="email">Seu email</label>
+                        <input class="input" type="email" id="email" placeholder="Seuemail@exemplo.com">
+                        <button type="submit" class="btn">Continuar</button>
+                     </form>
+   
+                     <div class="payment-step">
+                        <button class="btn return-btn">← Voltar</button>
+                        <label for="message">Deixe uma mensagem para os noivos</label>
+                        <textarea id="message" class="input" rows="4" placeholder="Escreva um recadinho carinhoso..."></textarea>
+         
+                        <div class="pix-row">
+                           <span id="pixKeyText" title="Clique para copiar">chave-pix@exemplo.com</span>
+                           <button class="btn" title="Clique para copiar">Copiar chave Pix</button>
+                        </div>
+         
+                        <button class="btn message-btn" id="waBtn">Enviar mensagem no WhatsApp</button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="gift-steps">
+                  <span class="active"></span>
+                  <span></span>
+               </div>
+            </div>
+         </section>
+
+         <hr class="rule">
+
+         <!-- FOOTER -->
+         <footer>Com carinho, Bia & João</footer>
+      </main>
+
+      <script type="module" src="./js/index.js"></script>
+   </body>
+</html>
