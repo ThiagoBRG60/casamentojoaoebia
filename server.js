@@ -9,6 +9,10 @@ app.use("/utils", express.static("utils"))
 app.use(express.static("public"))
 app.use(express.json())
 
+app.get("/", (req, res) => {
+   res.sendFile("index.html", {root: "public"})
+})
+
 // Detecta o pagamento feito pelo usuário e envia o email para o destinatário
 app.post("/api/payments/webhook", async (req, res) => {
    try {
