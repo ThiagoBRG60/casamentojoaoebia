@@ -1,5 +1,5 @@
 import { Resend } from "resend"
-import { formatCurrency } from "./currency.js"
+import { formatCurrency } from "../public/js/currency.js"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 const OWNER_EMAIL = "joaogabrielalberton@gmail.com"
@@ -15,7 +15,7 @@ function escapeHtml(value) {
 }
 
 // Envia o email de pagamento para o destinatário, com email, valor, presente e mensagem
-async function sendPaymentEmail({paymentId, email, amount, phrase, message}) {
+async function sendPaymentEmail(paymentId, email, amount, phrase, message) {
    const { data, error } = await resend.emails.send({
       from: "Casamento <onboarding@resend.dev>",
       to: OWNER_EMAIL,

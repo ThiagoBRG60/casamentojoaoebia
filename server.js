@@ -1,7 +1,7 @@
 import express from "express"
-import { validateWebhookSignature } from "../utils/webhook.js"
-import { validateEmail, validateGift } from "../utils/validation.js"
-import { sendPaymentEmail } from "../utils/email.js"
+import { validateWebhookSignature } from "./utils/webhook.js"
+import { validateEmail, validateGift } from "./public/js/validation.js"
+import { sendPaymentEmail } from "./utils/email.js"
 
 const app = express()
 
@@ -83,4 +83,4 @@ app.post("/api/payments/pix", async (req, res) => {
    }
 })
 
-app.listen(3000, () => console.log("Servidor rodando no endereço http://localhost:3000"))
+export default app
